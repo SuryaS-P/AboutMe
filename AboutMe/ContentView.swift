@@ -10,6 +10,10 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack{
+            ZStack {
+                Color(red: 20/255, green: 20/255, blue: 50/255)
+                    .ignoresSafeArea()
+            }
             VStack{
                 Text("SURYA")
                     .font(.largeTitle)
@@ -30,12 +34,14 @@ struct ContentView: View {
                     Text("Books are one of the most important things in my life. I am a voracious reader, and I don't have a particular favourite genre, though I am fond of primarily fiction.")
                         .font(.body)
                         .fontWeight(.light)
+                        .foregroundColor(Color(hue: 0.628, saturation: 0.095, brightness: 0.925))
                         .multilineTextAlignment(.center)
                         .padding(15.0)
                         
                     Text("Poetry is probably the most important part of my life, and I frequently write it, mostly free verse, though I have experimented in poetic styles. One of my favourites is a rimas dissolutas.")
                         .font(.body)
                         .fontWeight(.light)
+                        .foregroundColor(Color(hue: 0.628, saturation: 0.095, brightness: 0.925))
                         .multilineTextAlignment(.center)
                         .padding(15.0)
                 }
